@@ -1,4 +1,3 @@
-
 #include "philo.h"
 
 static int	kill_philo(t_info *info, t_philo *philos)

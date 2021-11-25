@@ -1,4 +1,3 @@
-
 #include "philo.h"
 
 int	init_info(t_info *info, char **av)

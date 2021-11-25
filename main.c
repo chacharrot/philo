@@ -1,4 +1,3 @@
-
 #include "philo.h"
 
 int	free_all(t_info *info, t_philo *philos)

@@ -1,4 +1,3 @@
-
 #include "philo.h"
 
 static double	get_micro_time(void)
