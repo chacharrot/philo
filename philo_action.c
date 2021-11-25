@@ -1,4 +1,3 @@
-
 #include "philo.h"
 
 void	get_fork(t_philo *philo)
