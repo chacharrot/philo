@@ -12,13 +12,17 @@ CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
 RM			= rm -rf
 
+.SILENT:
+
 all :		$(NAME)
 
 $(NAME) :	$(OBJS)
 			$(CC) $(CFLAGS) $(OBJS) -o $(NAME) -lpthread
+			echo "Complete"
 
-%.o: %.c
-			$(CC) $(CFLAGS) -c $(SRCS)
+.c.o :
+			echo "Compiling $^"
+			$(CC) $(CFLAGS) -c $^ -o $(^:.c=.o)
 
 clean :
 			$(RM) $(OBJS)

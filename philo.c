@@ -35,7 +35,7 @@ static void	*philo_action(void *philo_void)
 
 	philo = (t_philo *)philo_void;
 	if (philo->number % 2 == 1)
-		ft_sleep(50 * philo->number, CHECK_MICRO);
+		ft_sleep(70 * philo->number, CHECK_MICRO);
 	while (!philo->info->end)
 	{
 		get_fork(philo);
