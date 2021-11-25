@@ -25,7 +25,7 @@
 # define STATUS_DIED 4
 # define STATUS_FINISHED 5
 
-# define CHECK_MICRO 5
+# define CHECK_MICRO 1
 # define CHECK_MS 100
 
 typedef struct s_info
