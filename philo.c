@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   philo.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jiwonlee <jiwonlee@student.42seoul.kr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/28 21:23:25 by jiwonlee          #+#    #+#             */
-/*   Updated: 2021/07/07 19:29:54 by jiwonlee         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "philo.h"
 
@@ -46,7 +35,8 @@ static void	*philo_action(void *philo_void)
 	t_philo	*philo;
 
 	philo = (t_philo *)philo_void;
-	ft_sleep(50 * philo->number, CHECK_MICRO);
+	if (philo->number % 2 == 1)
+		ft_sleep(50 * philo->number, CHECK_MICRO);
 	while (!philo->info->end)
 	{
 		get_fork(philo);
